@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+  padding: 16px;
+  height: 100vh;
+}
+
+.icon {
+  color: gray;
+  font-size: medium;
+}
+
+.icon:hover {
+  color: lightgray;
+}
+
+.icon-active {
+  color: lightgreen;
+}
+
+.icon-active:hover {
+  color: lightgreen;
+}
+
+.song-icon {
+  width: 60px;
+  background-color: skyblue;
+  color: white;
+  line-height: 60px;
+  text-align: center;
+}
+
+.progress {
+  width: 100px;
+  height: 5px;
+  background-color: gray;
+  border-radius: 3px;
+}
+
+.progress div {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.progress:hover div {
+  background-color: lightgreen;
+}
+
+#container {
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 10px;
+}
+
+#wrapper {
+  flex-grow: 1;
+  display: flex;
+  gap: 10px;
+}
+
+#collection,
+#content {
+  background-color: rgb(37, 37, 37);
+  border-radius: 5px;
+  color: white;
+}
+
+#collection {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#collection-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+#collection-header h2 {
+  color: gray;
+}
+
+#collection-header h2:hover {
+  color: lightgray;
+}
+
+#collection-content {
+  flex-grow: 1;
+  overflow-y: scroll;
+  max-height: calc(100vh - 180px);
+  margin: 10px;
+}
+
+#content {
+  flex-grow: 4;
+}
+
+footer {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#song-detail {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  color: white;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+#song-detail .song-icon {
+  border-radius: 5px;
+}
+
+#song-detail div {
+  margin: 0 15px;
+}
+
+#song-detail h2 {
+  font-size: medium;
+}
+
+#song-detail p {
+  font-size: small;
+}
+
+#footer-option {
+  flex-grow: 1;
+  align-items: center;
+  color: white;
+}
+
+#option-menu,
+#option-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#option-menu {
+  margin-bottom: 10px;
+}
+
+#option-progress .progress {
+  width: 50%;
+}
+
+#footer-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#menu-progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

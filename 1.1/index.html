@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1.1</title>
+    <style>
+      span {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="email">Email</label>
+    <br />
+    <input id="email" name="email" type="email" required />
+    <span id="txtEmail"></span>
+    <br />
+    <label for="password">Password</label>
+    <br />
+    <input
+      id="password"
+      name="password"
+      type="password"
+      required
+      minlength="6"
+    />
+    <span id="txtPassword"></span>
+    <br />
+    <button onclick="handleClick()">Submit</button>
+
+    <script>
+      const handleClick = () => {
+        const email = document.getElementById("email");
+        const txtEmail = document.getElementById("txtEmail");
+        const password = document.getElementById("password");
+        const txtPassword = document.getElementById("txtPassword");
+
+        txtEmail.style.display = "none";
+        txtPassword.style.display = "none";
+
+        if (!email.checkValidity()) {
+          txtEmail.style.display = "inline";
+          txtEmail.innerHTML = email.validationMessage;
+        } else if (!password.checkValidity()) {
+          txtPassword.innerHTML = password.validationMessage;
+          txtPassword.style.display = "inline";
+        } else {
+          alert("Success");
+        }
+      };
+    </script>
+  </body>
+</html>
