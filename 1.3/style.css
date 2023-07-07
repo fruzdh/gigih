@@ -22,6 +22,7 @@ body {
 
 .icon-active {
   color: lightgreen;
+  font-size: xx-large;
 }
 
 .icon-active:hover {
@@ -34,6 +35,7 @@ body {
   color: white;
   line-height: 60px;
   text-align: center;
+  border-radius: 5px;
 }
 
 .progress {
@@ -107,6 +109,34 @@ body {
   flex-grow: 4;
 }
 
+#section-1 h1 {
+  margin-bottom: 20px;
+}
+
+#section-1 div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.artist-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start !important;
+  padding: 10px;
+  color: white;
+  min-width: 300px;
+  max-width: 300px;
+  gap: 20px;
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.artist-list .song-icon {
+  background-color: lightgreen;
+}
+
 footer {
   height: 80px;
   display: flex;
@@ -121,10 +151,6 @@ footer {
   color: white;
   min-width: 200px;
   max-width: 300px;
-}
-
-.song-detail .song-icon {
-  border-radius: 5px;
 }
 
 .song-detail div {
