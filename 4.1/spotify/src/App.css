@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hoverUnderline {
+  cursor: pointer;
+}
+
+.hoverUnderline:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  color: #b3b3b3;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #eaeaea;
+}
+
+.app {
+  display: flex;
+  max-width: 1500px;
+  flex-direction: column;
+  height: 100vh;
+  gap: 10px;
+  padding: 10px;
+  background-color: black;
+}
+
+.wrapper {
+  flex-grow: 1;
+  display: flex;
+  gap: 10px;
+  max-height: calc(100vh - 100px);
+}
+
+.leftWrapper {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

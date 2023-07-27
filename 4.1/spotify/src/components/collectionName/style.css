@@ -1,0 +1,12 @@
+.collectionNameWrapper {
+  color: white;
+  background-color: #181818;
+  border-radius: 20px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.collectionNameWrapper:hover {
+  background-color: #282828;
+}

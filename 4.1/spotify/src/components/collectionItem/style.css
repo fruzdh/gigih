@@ -1,0 +1,13 @@
+.collectionItemWrapper {
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.collectionItemWrapper:hover {
+  background-color: #181818;
+}

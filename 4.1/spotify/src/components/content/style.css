@@ -1,0 +1,42 @@
+.contentWrapper {
+  flex-grow: 1;
+  background-color: #121212;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  max-width: calc(100vw - 330px);
+  overflow-y: scroll;
+  max-height: 100%;
+}
+
+header {
+  text-align: right;
+  font-size: large;
+}
+
+header .icon {
+  margin-left: 10px;
+}
+
+.top h1 {
+  margin: 20px 0;
+}
+
+.topWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.sectionList {
+  display: flex;
+  justify-content: space-between;
+}
