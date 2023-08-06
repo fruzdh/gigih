@@ -1,18 +1,28 @@
-import "./style.css";
 import { FaHouse, FaSistrix } from "react-icons/fa6";
+import { Button } from "@chakra-ui/react";
+import { useHistory } from "react-router-dom";
 
 const Menu = () => {
+  const history = useHistory();
+
   return (
-    <div className="menuWrapper">
-      <div className="menuText icon">
-        <FaHouse />
-        <h2>Home</h2>
-      </div>
-      <div className="menuText icon">
-        <FaSistrix />
-        <h2>Search</h2>
-      </div>
-    </div>
+    <>
+      <Button
+        leftIcon={<FaHouse />}
+        w="100%"
+        mt="10px"
+        onClick={() => history.push("/")}
+      >
+        Home
+      </Button>
+      <Button
+        leftIcon={<FaSistrix />}
+        w="100%"
+        onClick={() => history.push("/search")}
+      >
+        Search
+      </Button>
+    </>
   );
 };
 

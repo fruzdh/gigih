@@ -1,54 +1,21 @@
-import "./style.css";
-import {
-  FaRegHeart,
-  FaShuffle,
-  FaBackwardStep,
-  FaCirclePause,
-  FaForwardStep,
-  FaRepeat,
-  FaRegSquareCaretRight,
-  FaMicrophone,
-  FaListUl,
-  FaComputer,
-  FaVolumeHigh,
-} from "react-icons/fa6";
-import SongIcon from "../songIcon";
-import Progress from "../progress";
+import { Grid, GridItem } from "@chakra-ui/react";
+import SongDetail from "./songDetail";
+import SongOption from "./songOption";
+import SongMenu from "./songMenu";
 
 const SongPlayer = () => {
   return (
-    <footer>
-      <div className="songDetail">
-        <SongIcon h="50px" w="50px" />
-        <div>
-          <h3 className="hoverUnderline">song title 1</h3>
-          <p className="hoverUnderline">artist name 1</p>
-        </div>
-        <FaRegHeart className="icon" />
-      </div>
-      <div>
-        <div className="songOption">
-          <FaShuffle className="icon" />
-          <FaBackwardStep className="icon" />
-          <FaCirclePause className="icon" />
-          <FaForwardStep className="icon" />
-          <FaRepeat className="icon" />
-        </div>
-        <div className="songProgress">
-          <p>5:00</p>
-          <Progress w="400px" />
-          <p>10:00</p>
-        </div>
-      </div>
-      <div className="songMenu">
-        <FaRegSquareCaretRight className="icon" />
-        <FaMicrophone className="icon" />
-        <FaListUl className="icon" />
-        <FaComputer className="icon" />
-        <FaVolumeHigh className="icon" />
-        <Progress w="100px" />
-      </div>
-    </footer>
+    <Grid templateColumns="300px auto 300px" templateRows="80px" gap="10px">
+      <GridItem rowSpan={1} colSpan={1}>
+        <SongDetail />
+      </GridItem>
+      <GridItem rowSpan={1} colSpan={1}>
+        <SongOption />
+      </GridItem>
+      <GridItem rowSpan={1} colSpan={1}>
+        <SongMenu />
+      </GridItem>
+    </Grid>
   );
 };
 

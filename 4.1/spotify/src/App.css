@@ -12,6 +12,12 @@
   text-decoration: underline;
 }
 
+.textOneLine {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .icon {
   color: #b3b3b3;
   cursor: pointer;
@@ -19,6 +25,26 @@
 
 .icon:hover {
   color: #eaeaea;
+}
+
+.greenIcon {
+  color: #1ed760;
+  font-size: xxx-large;
+  background-color: #181818;
+  border-radius: 50%;
+}
+
+.greenIcon:hover {
+  color: #23eb69;
+}
+
+.playIcon {
+  display: none;
+}
+
+.appGridItem {
+  border-radius: 10px;
+  background-color: #121212;
 }
 
 .app {
@@ -43,4 +69,31 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.loginWrapper {
+  margin: auto;
+}
+
+.loginWrapper button {
+  background-color: #1ed760;
+  border: none;
+  border-radius: 30px;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+
+.loginWrapper button:hover {
+  background-color: #23eb69;
+}
+
+.contentWrapper {
+  flex-grow: 1;
+  background-color: #121212;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  max-width: calc(100vw - 330px);
+  overflow-y: scroll;
+  max-height: 100%;
 }
